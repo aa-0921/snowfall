@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnowFall</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w-5 roof"></div>
+    <div class="w-8 roof"></div>
+    <div class="w-16 roof"></div>
+    <div class="w-24 roof"></div>
+    <div class="w-32 roof"></div>
+    <div class="w-40 roof"></div>
+    <div class="w-48 roof"></div>
+    <div class="w-56 roof"></div>
+    <div class="w-64 roof"></div>
+
+    <div class="w-40 home"></div>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    ></script>
+    <!-- <script src="./assets/js/snowfall.jquery.min.js" charset="UTF-8"></script> -->
+    <script src="./asset/js/snowfall.jquery.min.js" charset="UTF-8"></script>
+
+    <script type="text/javascript">
+      $(document).snowfall({
+        flakeCount: 100, // 要素の数
+        flakeColor: "#FFF", // 要素の色
+        flakeIndex: 999999, // 要素のz-index
+        minSize: 1, // 要素の最小サイズ
+        maxSize: 10, // 要素の最大サイズ
+        minSpeed: 1, // 要素の最小落下スピード
+        maxSpeed: 7, // 要素の最大落下スピード
+        round: true, // 要素に丸みを持たせる？
+        shadow: false, // 要素に影をつける？
+        collection: ".roof", // 要素を指定の要素に積もらせる設定(画像を設定してもflakeColorで指定した要素の色が積もります)
+        //image : './image.png'		// 要素を指定の画像に変更
+      });
+    </script>
+  </body>
+</html>

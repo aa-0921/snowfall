@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+.roof {
+  margin-top: 30px;
+  /* width: 300px; */
+  border: 1px gray solid;
+  margin: 0;
+  background-color: brown;
+  height: 30px;
+}
+
+.home {
+  height: 700px;
+  background-color: azure;
+}
